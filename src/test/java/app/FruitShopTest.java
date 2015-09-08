@@ -1,19 +1,23 @@
 package app;
 
 import model.FruitOrder;
+import org.junit.Before;
 import org.junit.Test;
 
-import javax.inject.Inject;
 import java.util.List;
 
 import static com.google.common.collect.Lists.newArrayList;
 import static model.Fruit.*;
 import static org.fest.assertions.api.Assertions.assertThat;
 
-public class FruitShopTest extends AbstractTest {
+public class FruitShopTest {
 
-    @Inject
     public FruitShop fruitShop;
+
+    @Before
+    public void setUp() {
+        fruitShop = new FruitShop();
+    }
 
     @Test
     public void should_get_price() {

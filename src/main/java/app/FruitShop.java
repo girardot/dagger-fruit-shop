@@ -1,6 +1,5 @@
 package app;
 
-import model.Fruit;
 import model.FruitOrder;
 
 import javax.inject.Inject;
